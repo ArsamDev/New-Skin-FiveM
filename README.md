@@ -1,7 +1,7 @@
 # New-Skin-FiveM
 This is a better /skin command for FiveM
 
-You can use it if you are superadmin
+You can use it if you are not user
 Change self skin:
 
 /newskin
