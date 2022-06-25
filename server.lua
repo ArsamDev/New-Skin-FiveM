@@ -6,8 +6,8 @@ TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
   
 RegisterCommand("newskin", function(source, args, rawCommand)
   if args[1] ~= nil then
-    local xPlayers = ESX.GetPlayerFromId(args[1])
-    if xPlayers.getGroup() == "user" then
+    local xPlayers = ESX.GetPlayerFromId(source)
+    if xPlayers.getGroup() ~= "user" then
       TriggerClientEvent('esx_skin:openSaveableMenu', args[1])
     end
     return
